@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKLIST APP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fa fa-book text-primary" aria-hidden="true"></i>
+            My <span class="text-primary">Book</span>List
+        </h1>
+        
+
+        <form action="" id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN#</label>
+                <input type="number" class="form-control" id="isbn">
+            </div>
+            <div class="d-grid">
+                <input type="submit" class="btn btn-primary  mt-3" value="Add Book">
+            </div>  
+        </form>
+        <table class="table table-striped mt-3">
+            <thead>
+                <th>Title</th>
+                <th>Auther</th>
+                <th>ISBN#</th>
+                <th>Action</th>
+            </thead>
+
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+    <script src="https://use.fontawesome.com/e96639813a.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
